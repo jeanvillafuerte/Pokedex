@@ -122,6 +122,7 @@
     <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
+    <Build Include="Security\Permissions.sql" />
     <Build Include="dbo\Tables\Users.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -130,7 +131,11 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Security\Permissions.sql" />
-    <Build Include="Dockerfile.sql" />
+    <Build Include="Security\PokemonUser.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dockerfile" />
+    <None Include=".gitignore" />
+    <None Include="dbpokemon.sql" />
   </ItemGroup>
 </Project>

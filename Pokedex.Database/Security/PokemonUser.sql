@@ -1,0 +1,2 @@
+﻿CREATE USER [PokemonUser] FOR LOGIN [USPOKEMON];
+

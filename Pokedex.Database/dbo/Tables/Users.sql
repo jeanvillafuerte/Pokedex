@@ -8,3 +8,27 @@
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
+
+GO
+GRANT UPDATE
+    ON OBJECT::[dbo].[Users] TO [PokemonUser]
+    AS [dbo];
+
+
+GO
+GRANT SELECT
+    ON OBJECT::[dbo].[Users] TO [PokemonUser]
+    AS [dbo];
+
+
+GO
+GRANT INSERT
+    ON OBJECT::[dbo].[Users] TO [PokemonUser]
+    AS [dbo];
+
+
+GO
+GRANT DELETE
+    ON OBJECT::[dbo].[Users] TO [PokemonUser]
+    AS [dbo];
+

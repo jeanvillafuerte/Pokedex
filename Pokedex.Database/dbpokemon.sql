@@ -1,6 +1,4 @@
-
-
-USE [master]
+﻿USE [master]
 GO
 
 CREATE DATABASE [DbPokemon];
