@@ -1,0 +1,26 @@
+﻿version: "3"
+services: 
+  web:
+    build:
+      context: .
+      dockerfile: Pokedex.Web/Dockerfile
+    ports: 
+      - "5005:4200"
+    command: 
+      bash -c "ng serve --host 0.0.0.0 --port 4200"
+
+  api:
+    build:
+      context: .
+      dockerfile: Pokedex.Api/Dockerfile
+    ports:
+      - "5006:80"
+    depends_on: 
+      - db
+  
+  db:
+    build:
+      context: .
+      dockerfile:  Pokedex.Database/Dockerfile
+    ports:
+      - "1433:1433"

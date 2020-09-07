@@ -1,0 +1,37 @@
+<div class="columns is-mobile is-multiline is-centered">
+  <div class="column is-narrow" *ngFor="let pokemon of pokemons">
+      <div class="card">
+        <header class="card-header has-background-danger">
+          <p class="card-header-title has-text-white">
+            Pokemon Id : {{pokemon.id}}
+          </p>
+          <a href="#" class="card-header-icon pl-0" aria-label="more options" (click)="favoriteOpt(pokemon.id, pokemon.isFavorite)">
+            <span class="icon has-text-white">
+              <i class="fa" [class.fa-star]="pokemon.isFavorite"  [class.fa-star-o]="!pokemon.isFavorite" aria-hidden="true" [id]="'fav' + pokemon.id"></i>
+            </span>
+          </a>
+        </header >
+        <div class="card-content" (click)="showDetail(pokemon.id)">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image">
+                <img [src]="pokemon.sprite" alt="Placeholder image">
+              </figure>
+            </div>
+          </div>
+          <div class="content has-text-centered">
+            {{pokemon.name}}
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<br>
+<nav class="pagination" role="navigation" aria-label="pagination" *ngIf="pokemons">
+  <a class="pagination-previous" [attr.disabled]="(currentPage == 1) ? true : null" (click)="onChangePage(currentPage - 1)">Previous</a>
+  <a class="pagination-next" [attr.disabled]="(pages.length === 1 || currentPage === pages.length) ? true : null" (click)="onChangePage(currentPage + 1)">Next page</a>
+  <ul class="pagination-list" *ngIf="!(1 == pages.length)">
+    <li *ngFor="let page of pages"><a class="pagination-link" [class.is-current]="page == currentPage" aria-label="Goto page" (click)="onChangePage(page)">{{page}}</a></li>
+  </ul>
+</nav>
+<app-pokemon [pokemon]="pokemon"></app-pokemon>

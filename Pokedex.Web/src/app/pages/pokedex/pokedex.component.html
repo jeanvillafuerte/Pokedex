@@ -1,0 +1,35 @@
+
+  <div class="field has-addons">
+    <p class="control">
+      <span class="select" (change)="changePageSize($event.target.value)">
+        <select>
+          <option>10</option>
+          <option>20</option>
+          <option>30</option>
+          <option>50</option>
+          <option>100</option>
+        </select>
+      </span>
+    </p>
+    <p class="control is-expanded">
+      <input (keyup.enter)="search()" minlength="2" required class="input" type="text" placeholder="pikachu" [(ngModel)]="searchTerm.term">
+    </p>
+    <p class="control">
+      <button class="button is-info" (click)="search()">
+        <span class="icon is-small">
+          <i class="fa fa-search"></i>
+        </span>
+      </button>
+    </p>
+  </div>
+  <article class="message is-danger" *ngIf="(searchTerm.term && minLength > searchTerm.term.length)">
+    <div class="message-header">
+      <p>Required min {{minLength}} character</p>
+    </div>
+  </article>
+  <article class="message is-info" *ngIf="total > 0">
+    <div class="message-header">
+      <p>{{total}} pokemons</p>
+    </div>
+  </article>
+  <app-pokedex-list [pokemons]="pokemons" [pages]="pages" (ChangePage)="onChangePage($event)"></app-pokedex-list>

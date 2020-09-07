@@ -1,0 +1,35 @@
+<div class="body">
+    <section class="hero is-success is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <h3 class="title has-text-black">Pokedex App</h3>
+                    <hr class="login-hr">
+                    <p class="subtitle has-text-black">Please login to proceed.</p>
+                    <div class="box">
+                        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                            <div class="field">
+                                <div class="control">
+                                    <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && loginForm.controls.username.errors }" class="input is-large" placeholder="Your Username" autofocus="" />
+                                    <div *ngIf="submitted && loginForm.controls.username.errors" class="invalid-feedback">
+                                        <div *ngIf="loginForm.controls.username.errors.required">Username is required</div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="field">
+                                <div class="control">
+                                    <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && loginForm.controls.password.errors }" class="input is-large"  placeholder="Your Password" />
+                                    <div *ngIf="submitted && loginForm.controls.password.errors" class="invalid-feedback">
+                                        <div *ngIf="loginForm.controls.password.errors.required">Password is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button is-block is-info is-large is-fullwidth">Login <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,53 @@
+<section class="hero is-danger" *ngIf="isAuth && !isLoginPage">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item is-size-1" *ngIf="isMain">
+              Pokedex App - {{ userName }}
+            </a>
+            <a class="navbar-item is-size-1" *ngIf="!isMain">
+              My Favorite Pokemon - {{ userName }}
+            </a>
+            <a (click)="toggleNavbar()" #navBurger class="navbar-burger burger" data-target="nav-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <div #navMenu class="navbar-menu">
+            <div class="navbar-end">
+              <span class="navbar-item" *ngIf="isMain">
+                <a class="button is-info" [routerLink]="[ '/favorites' ]">
+                  <span class="icon">
+                    <i class="fa fa-star-o"></i>
+                  </span>
+                  <span>Favorites</span>
+                </a>
+              </span>
+              <span class="navbar-item is-active" *ngIf="!isMain">
+                <a class="button is-info" [routerLink]="[ '/' ]">
+                  <span class="icon">
+                    <i class="fa fa-backward"></i>
+                  </span>
+                  <span>Search</span>
+                </a>
+              </span>
+              <span class="navbar-item" *ngIf="isAuth" (click)="logout()">
+                <a class="button is-info">
+                  <span class="icon">
+                    <i class="fa fa-sign-out"></i>
+                  </span>
+                  <span>Sign Out</span>
+                </a>
+              </span>
+            </div>
+          </div>
+         
+        </div>
+      </nav>
+    </div>
+  </section>
+  <br *ngIf="isAuth && !isLoginPage" >
+<router-outlet></router-outlet>
+<app-loader></app-loader>

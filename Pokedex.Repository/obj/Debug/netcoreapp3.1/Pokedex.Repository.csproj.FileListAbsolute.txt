@@ -1,0 +1,12 @@
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\bin\Debug\netcoreapp3.1\Pokedex.Repository.deps.json
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\bin\Debug\netcoreapp3.1\Pokedex.Repository.dll
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\bin\Debug\netcoreapp3.1\Pokedex.Repository.pdb
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\bin\Debug\netcoreapp3.1\Pokedex.Domain.dll
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\bin\Debug\netcoreapp3.1\Pokedex.Domain.pdb
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\obj\Debug\netcoreapp3.1\Pokedex.Repository.csprojAssemblyReference.cache
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\obj\Debug\netcoreapp3.1\Pokedex.Repository.AssemblyInfoInputs.cache
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\obj\Debug\netcoreapp3.1\Pokedex.Repository.AssemblyInfo.cs
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\obj\Debug\netcoreapp3.1\Pokedex.Repository.csproj.CoreCompileInputs.cache
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\obj\Debug\netcoreapp3.1\Pokedex.Repository.csproj.CopyComplete
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\obj\Debug\netcoreapp3.1\Pokedex.Repository.dll
+C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Repository\obj\Debug\netcoreapp3.1\Pokedex.Repository.pdb

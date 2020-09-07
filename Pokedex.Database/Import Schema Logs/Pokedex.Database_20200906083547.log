@@ -1,0 +1,86 @@
+6/09/2020 15:35:47	This log contains information about the import schema operation into project 'Pokedex.Database' on computer 'BNJM15' by user 'jean'.
+6/09/2020 15:35:47	Import of database schema has started.
+6/09/2020 15:35:57	Gathering database credentials
+6/09/2020 15:35:57	Gathering database options
+6/09/2020 15:35:57	Gathering generic database scoped configuration option
+6/09/2020 15:35:57	Gathering users
+6/09/2020 15:35:57	Gathering roles
+6/09/2020 15:35:57	Gathering application roles
+6/09/2020 15:35:57	Gathering role memberships
+6/09/2020 15:35:57	Gathering filegroups
+6/09/2020 15:35:57	Gathering full-text catalogs
+6/09/2020 15:35:57	Gathering assemblies
+6/09/2020 15:35:57	Gathering certificates
+6/09/2020 15:35:57	Gathering asymmetric keys
+6/09/2020 15:35:57	Gathering symmetric keys
+6/09/2020 15:35:57	Gathering encrypted symmetric keys
+6/09/2020 15:35:57	Gathering schemas
+6/09/2020 15:35:57	Gathering XML schema collections
+6/09/2020 15:35:57	Gathering user-defined data types
+6/09/2020 15:35:57	Gathering user-defined types
+6/09/2020 15:35:57	Gathering table types
+6/09/2020 15:35:57	Gathering unique keys for table types
+6/09/2020 15:35:57	Gathering primary keys for table types
+6/09/2020 15:35:57	Gathering indexes for table types
+6/09/2020 15:35:57	Gathering check constraints for table types
+6/09/2020 15:35:57	Gathering default constraints for table types
+6/09/2020 15:35:57	Gathering partition functions
+6/09/2020 15:35:57	Gathering partition schemes
+6/09/2020 15:35:57	Gathering functions
+6/09/2020 15:35:57	Gathering encrypted functions
+6/09/2020 15:35:57	Gathering aggregates
+6/09/2020 15:35:57	Gathering procedures
+6/09/2020 15:35:57	Gathering encrypted procedures
+6/09/2020 15:35:57	Gathering tables
+6/09/2020 15:35:57	Gathering primary keys
+6/09/2020 15:35:57	Gathering unique constraints
+6/09/2020 15:35:57	Gathering foreign keys
+6/09/2020 15:35:57	Gathering default constraints
+6/09/2020 15:35:57	Gathering check constraints
+6/09/2020 15:35:57	Gathering views
+6/09/2020 15:35:57	Gathering encrypted views
+6/09/2020 15:35:57	Gathering indexes
+6/09/2020 15:35:57	Gathering statistics
+6/09/2020 15:35:57	Gathering full-text index stoplists
+6/09/2020 15:35:57	Gathering search property lists
+6/09/2020 15:35:57	Gathering search properties
+6/09/2020 15:35:57	Gathering full-text indexes
+6/09/2020 15:35:57	Gathering column store indexes
+6/09/2020 15:35:57	Gathering spatial indexes
+6/09/2020 15:35:57	Gathering XML indexes
+6/09/2020 15:35:57	Gathering Selective XML indexes
+6/09/2020 15:35:57	Gathering encrypted triggers
+6/09/2020 15:35:57	Gathering triggers
+6/09/2020 15:35:57	Gathering encrypted and clr ddl triggers
+6/09/2020 15:35:57	Gathering ddl triggers
+6/09/2020 15:35:57	Gathering synonyms
+6/09/2020 15:35:57	Gathering defaults
+6/09/2020 15:35:57	Gathering data constraint uddt bindings
+6/09/2020 15:35:57	Gathering rules
+6/09/2020 15:35:57	Gathering data constraint uddt bindings
+6/09/2020 15:35:57	Gathering message types
+6/09/2020 15:35:57	Gathering queues
+6/09/2020 15:35:57	Gathering contracts
+6/09/2020 15:35:57	Gathering services
+6/09/2020 15:35:57	Gathering event notifications
+6/09/2020 15:35:57	Gathering remote service bindings
+6/09/2020 15:35:57	Gathering broker priorities
+6/09/2020 15:35:57	Gathering signatures
+6/09/2020 15:35:57	Gathering data compression options
+6/09/2020 15:35:57	Gathering sequence types
+6/09/2020 15:35:57	Gathering security policies
+6/09/2020 15:35:57	Gather column encryption keys
+6/09/2020 15:35:57	Gathering column master keys
+6/09/2020 15:35:58	Gathering external data sources
+6/09/2020 15:35:58	Gathering external file formats
+6/09/2020 15:35:58	Gathering external tables
+6/09/2020 15:35:58	Gathering database permissions
+6/09/2020 15:35:58	Gathering extended properties
+6/09/2020 15:35:58	Gathering credentials
+6/09/2020 15:35:58	Gathering logins
+6/09/2020 15:35:58	Gathering server audits
+6/09/2020 15:35:59	Scanning project for duplicate elements
+6/09/2020 15:36:00	Finished duplicate element processing
+6/09/2020 15:36:00	Finished importing database.
+6/09/2020 15:36:00	A summary of the import was saved to the following location: C:\Users\jean.DESKTOP-VU8UP00\source\repos\Pokedex\Pokedex.Database\Import Schema Logs\Pokedex.Database_20200906083547.log
+6/09/2020 15:36:00	Click Finish to continue...

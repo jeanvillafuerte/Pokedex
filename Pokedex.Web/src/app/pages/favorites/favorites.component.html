@@ -1,0 +1,6 @@
+ <article class="message is-info" *ngIf="pokemons">
+    <div class="message-header">
+      <p>{{pokemons.length}} pokemon(s)</p>
+    </div>
+  </article>
+<app-pokedex-list [isFavorite]="true" [pokemons]="pokemons" [pages]="pages" (ChangePage)="onChangePage($event)"></app-pokedex-list>

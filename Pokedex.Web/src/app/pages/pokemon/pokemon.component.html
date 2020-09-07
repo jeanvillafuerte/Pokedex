@@ -1,0 +1,55 @@
+<div class="modal" [class.is-active]="pokemon" id="pokemonDetail">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">{{pokemon?.name}}</p>
+          <button class="delete" (click)="close()"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="columns is-mobile">
+            <div class="column">
+              <img [src]="pokemon?.sprite" class="image"/>
+            </div>
+            <div class="column is-one-quarter">
+              <nav class="panel is-danger">
+              <p class="panel-heading">
+                Types
+              </p>
+              <a class="panel-block" *ngFor="let item of pokemon?.types">
+                {{item}}
+              </a>
+              </nav>
+              
+            </div>
+          </div>
+        
+          <hr>
+          <div class="columns is-mobile">
+            <div class="column is-one-third">HP : {{ pokemon?.stats.hp}}</div>
+            <div class="column"><progress class="progress is-info" [attr.value]="pokemon?.stats.hp" max="150">{{pokemon?.stats.hp}}%</progress></div>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column is-one-third">Attack : {{ pokemon?.stats.attack}}</div>
+            <div class="column"><progress class="progress is-info" [attr.value]="pokemon?.stats.attack" max="150">{{pokemon?.stats.attack}}%</progress></div>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column is-one-third">Defense : {{ pokemon?.stats.defense}}</div>
+            <div class="column"><progress class="progress is-info" [attr.value]="pokemon?.stats.defense" max="150">{{pokemon?.stats.defense}}%</progress></div>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column is-one-third">Special Attack : {{ pokemon?.stats.spAttack}}</div>
+            <div class="column"><progress class="progress is-info" [attr.value]="pokemon?.stats.spAttack" max="150">{{pokemon?.stats.spAttack}}%</progress></div>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column is-one-third">Special Defense : {{ pokemon?.stats.spDefense}}</div>
+            <div class="column"><progress class="progress is-info" [attr.value]="pokemon?.stats.spDefense" max="150">{{pokemon?.stats.spDefense}}%</progress></div>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column is-one-third">Speed : {{ pokemon?.stats.speed}}</div>
+            <div class="column"><progress class="progress is-info" [attr.value]="pokemon?.stats.speed" max="150">{{pokemon?.stats.speed}}%</progress></div>
+          </div>
+        </section>
+        
+        
+      </div>
+  </div>
